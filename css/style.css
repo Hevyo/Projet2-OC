@@ -58,8 +58,8 @@ body {
 .EnTete {
     display: flex;
     flex-direction: row;
-    height: 79px;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .logo {
@@ -70,20 +70,16 @@ body {
 
 nav {
     display: flex;
-    width: 328,6px;
-    height: 35px;
-    left: 1111.09px;
-    padding: 0px 25px 0px 25px;
     gap: 68px;
 }
 
 nav a {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     text-align: center;
     color:#0065FC;
-    line-height: 18.78px;
+    padding: 12px 0px 12px 0px;
 }
 
 nav a:visited {
@@ -199,5 +195,13 @@ nav a:hover {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .EnTete {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
 }
