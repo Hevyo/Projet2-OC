@@ -53,6 +53,47 @@ body {
     color: var(--main-bg-color)
 }
 
+/****** En-tête du site ***********/
+
+.EnTete {
+    display: flex;
+    flex-direction: row;
+    height: 79px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 61.09px;
+    height: 19px;
+    padding: 30px 50px 30px 50px;
+}
+
+nav {
+    display: flex;
+    width: 328,6px;
+    height: 35px;
+    left: 1111.09px;
+    padding: 0px 25px 0px 25px;
+    gap: 68px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color:#0065FC;
+    line-height: 18.78px;
+}
+
+nav a:visited {
+    color:#0065FC;
+}
+
+nav a:hover {
+    border-top: 2px solid #0065FC;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
