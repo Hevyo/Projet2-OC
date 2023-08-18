@@ -53,6 +53,14 @@ body {
     color: var(--main-bg-color)
 }
 
+h1 {
+    font-size: 1.375em;
+}
+
+p {
+    font-size: 1em;
+}
+
 /****** En-tête du site ***********/
 
 .EnTete {
@@ -65,7 +73,7 @@ body {
 .logo {
     width: 61.09px;
     height: 19px;
-    padding: 30px 50px 30px 50px;
+    padding: 30px 0px 30px 0px;
 }
 
 nav {
@@ -77,7 +85,6 @@ nav a {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
-    text-align: center;
     color:#0065FC;
     padding: 12px 0px 12px 0px;
 }
@@ -88,6 +95,47 @@ nav a:visited {
 
 nav a:hover {
     border-top: 2px solid #0065FC;
+}
+
+/****** Zone informations et recherche ***********/
+
+.recherche {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0px 30px 0px;
+}
+
+.LocaIcone {
+    background-color: #F2F2F2;
+    justify-content: center;
+    padding: 15px 20px 15px 20px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+input[name="recherche"] {
+    border: 1px solid #F2F2F2;
+    padding: 15px 20px 15px 20px;
+}
+
+input[name="recherche"]:focus {
+    outline: none;
+}
+
+input[name="bouton"] {
+    border: 1px solid #F2F2F2;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 1.125em;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: 1.125em;
+    text-align: center;
+    font-weight: bold;
 }
 
 /****** Hebergements And Populaires ***********/
