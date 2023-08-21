@@ -114,20 +114,27 @@ nav a:hover {
 
 input[name="recherche"] {
     border: 1px solid #F2F2F2;
-    padding: 15px 20px 15px 20px;
+    height: 48.8px;
+    width: 130.6px;
+    padding: 0px 30px 0px 30px;
 }
 
 input[name="recherche"]:focus {
     outline: none;
 }
 
-input[name="bouton"] {
+button {
     border: 1px solid #F2F2F2;
     background-color: #0065FC;
     color: white;
     font-weight: bold;
     border-radius: 0px 15px 15px 0px;
     font-size: 1.125em;
+    padding: 0px 20px 0px 20px;
+}
+
+.loupe {
+    display: none;
 }
 
 ::placeholder {
@@ -136,6 +143,42 @@ input[name="bouton"] {
     font-size: 1.125em;
     text-align: center;
     font-weight: bold;
+}
+
+/****** Filtres ***********/
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.groupeCaseFiltre {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 1.063em;
+}
+
+.caseFiltre {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    padding: 0px 19px 0px 19px;
+    border-radius: 25px;
+}
+
+.caseFiltre:hover {
+    background-color: #DEEBFF;
+}
+
+.titreFiltre {
+    font-size: 1.125em;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -239,6 +282,22 @@ input[name="bouton"] {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .filtres {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+
+    .groupeCaseFiltre {
+        flex-wrap: wrap;
+    }
+
+    .caseFiltre {
+        height: 50px;
+        width: 162.5px;
+        justify-content: center;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -251,5 +310,13 @@ input[name="bouton"] {
     nav a:hover {
         border-top: none;
         border-bottom: 2px solid #0065FC;
+    }
+
+    .rechercher {
+        display: none;
+    }
+
+    .loupe {
+        display: block;
     }
 }
