@@ -95,6 +95,7 @@ nav a:visited {
 
 nav a:hover {
     border-top: 2px solid #0065FC;
+    padding-top: 10px;
 }
 
 /****** Zone informations et recherche ***********/
@@ -131,6 +132,7 @@ button {
     border-radius: 0px 15px 15px 0px;
     font-size: 1.125em;
     padding: 0px 20px 0px 20px;
+    cursor: pointer;
 }
 
 .loupe {
@@ -145,7 +147,7 @@ button {
     font-weight: bold;
 }
 
-/****** Filtres ***********/
+/****** Filtres et info en dessous***********/
 
 .filtres {
     display: flex;
@@ -153,7 +155,7 @@ button {
     gap: 20px;
     font-weight: bold;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .groupeCaseFiltre {
@@ -181,6 +183,20 @@ button {
     font-size: 1.125em;
 }
 
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.info .fa-solid {
+    padding: 12px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -197,6 +213,28 @@ button {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergementsCardsRow1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.hebergementsCards img {
+    width: 100%;
+    height: 136px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergementsCards a {
+    text-decoration: none;
+    color: black;
 }
 
 /****** Populaires ***********/
@@ -244,7 +282,10 @@ button {
     margin-bottom: 5px;
 }
 
-
+.populaires-cards a {
+    text-decoration: none;
+    color: black;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -310,6 +351,7 @@ button {
     nav a:hover {
         border-top: none;
         border-bottom: 2px solid #0065FC;
+        padding : 12px 0px 10px 0px
     }
 
     .rechercher {
