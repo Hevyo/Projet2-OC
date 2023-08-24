@@ -362,6 +362,40 @@ button {
     margin: 20px 19px;
 }
 
+/****** Footer ***********/
+
+.liensFooter {
+    display: flex;
+    flex-direction: row;
+    background-color:#F2F2F2;
+    gap: 230px;
+}
+
+.coloneFooter {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.coloneFooter h2 {
+    font-size: 1.125em;
+    margin: 0;
+}
+
+.coloneFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.coloneFooter li {
+    margin-top: 15px;
+}
+
+.coloneFooter a {
+    color: black;
+    text-decoration: none;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -417,6 +451,10 @@ button {
         height: 50px;
         width: 162.5px;
         justify-content: center;
+    }
+
+    .liensFooter {
+        gap: 80px;
     }
 }
 
@@ -491,5 +529,10 @@ button {
 
     .activitesCards img {
         height: 141px;
+    }
+
+    .liensFooter {
+        flex-direction: column;
+        gap: 20px;
     }
 }
