@@ -178,6 +178,7 @@ form button {
 .titreFiltre {
     font-size: 1.125em;
     margin-top: 0;
+    padding-top: 15px;
 }
 
 .groupeCaseFiltre {
