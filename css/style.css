@@ -86,17 +86,17 @@ nav a {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
-    color:#0065FC;
     padding: 12px 0px;
 }
 
 nav a:visited {
-    color:#0065FC;
+    color: black;
 }
 
 nav a:hover {
     border-top: 2px solid #0065FC;
     padding-top: 10px;
+    color:#0065FC;
 }
 
 /****** Zone informations et recherche ***********/
@@ -119,6 +119,7 @@ nav a:hover {
    height: 50px;
    line-height: 50px;
    vertical-align: middle;
+   color: black;
 }
 
 form {
@@ -523,6 +524,10 @@ form button {
 
     .loupe {
         display: block;
+    }
+
+    .loupe .fa-solid {
+        color: white;
     }
 
     .groupeCaseFiltre {
